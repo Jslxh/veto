@@ -22,13 +22,13 @@ VETO processes decisions linearly through the following stages:
 
 2. **Run Demo Scenarios**:
    ```bash
-   PYTHONPATH=threshold python threshold/demo/run_demo.py
+   PYTHONPATH=. python demo/run_demo.py
    ```
    This executes the 5 validation scenarios end-to-end, logs each `AuditRecord` formatted as JSON, and outputs aggregated business metrics.
 
 3. **Run Suite Tests**:
    ```bash
-   PYTHONPATH=threshold pytest threshold/tests/test_scenarios.py
+   PYTHONPATH=. pytest tests/test_scenarios.py
    ```
 
 ---
