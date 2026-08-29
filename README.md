@@ -55,3 +55,11 @@ Aggregated outcomes from the scenario runs:
 | 3 | Scenario 1, customer declines | Proves a declined outcome is properly registered without adding extra order value. |
 | 4 | Low-value cart, weak rule match | Proves the agent penalizes repetitive declines, pushing confidence below threshold (0.65) and correctly declining. |
 | 5 | Cart with active discount | Proves the guardrail gate successfully blocks upsells on checkouts that already have a discount. |
+
+---
+
+## Swagger UI & SQLite Audit Demo
+
+Here is a full browser-recorded demo of the Swagger UI interactive documentation, testing checkout decisions, and inspecting SQLite audit logs:
+
+![VETO Swagger UI and SQLite Audit Demo](assets/swagger_demo.webp)
