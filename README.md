@@ -2,6 +2,9 @@
 
 Merchants lose significant potential revenue from missed checkout upsell opportunities, yet deploying naive upsell bots often backfires, eroding customer trust, showing irrelevant offers, and causing logic conflicts with existing discounts. VETO addresses this by introducing a bounded, guardrail-gated decision agent. By validating every proposed recommendation against confidence scores and cart contexts, and committing all evaluations to a tamper-resistant SQLite log, VETO guarantees safe, business-aligned checkout optimizations.
 
+## Tech Stack
+FastAPI, Pydantic, LangGraph, SQLite
+
 ## Architecture
 
 VETO processes decisions linearly through the following stages:
@@ -37,8 +40,8 @@ VETO processes decisions linearly through the following stages:
 
 Aggregated outcomes from the scenario runs:
 - **Decline Rate**: 40.00%
-- **Total Baseline Checkout Value**: $5300.00
-- **Total Gained Upsell Value**: $250.00
+- **Total Baseline Checkout Value**: ₹5300.00
+- **Total Gained Upsell Value**: ₹250.00
 - **Overall Order Value Uplift**: 4.72%
 
 ---
