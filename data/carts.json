@@ -1,0 +1,1007 @@
+[
+  {
+    "id": "cart_scenario_1",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 1200.0,
+    "customer_id": "cust_1",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_scenario_2",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 1200.0,
+    "customer_id": "cust_1",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 250.0
+    }
+  },
+  {
+    "id": "cart_scenario_3",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 1200.0,
+    "customer_id": "cust_1",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_scenario_4",
+    "items": [
+      {
+        "id": "item_C",
+        "price": 500.0,
+        "category": "apparel"
+      }
+    ],
+    "order_value": 500.0,
+    "customer_id": "cust_4",
+    "has_active_discount": false,
+    "purchase_history": [
+      "apparel"
+    ],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_scenario_5",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 1200.0,
+    "customer_id": "cust_5",
+    "has_active_discount": true,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_6",
+    "items": [
+      {
+        "id": "item_aff_6",
+        "price": 5342.0,
+        "category": "books"
+      }
+    ],
+    "order_value": 5342.0,
+    "customer_id": "cust_gen_106",
+    "has_active_discount": false,
+    "purchase_history": [
+      "books",
+      "electronics"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 801.3
+    }
+  },
+  {
+    "id": "cart_gen_7",
+    "items": [
+      {
+        "id": "item_no_7",
+        "price": 661.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 661.0,
+    "customer_id": "cust_gen_107",
+    "has_active_discount": false,
+    "purchase_history": [
+      "apparel"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_8",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_8",
+        "price": 628.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 1828.0,
+    "customer_id": "cust_gen_108",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 274.2
+    }
+  },
+  {
+    "id": "cart_gen_9",
+    "items": [
+      {
+        "id": "item_high_9",
+        "price": 5513.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 5513.0,
+    "customer_id": "cust_gen_109",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_10",
+    "items": [
+      {
+        "id": "item_aff_10",
+        "price": 730.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 730.0,
+    "customer_id": "cust_gen_110",
+    "has_active_discount": true,
+    "purchase_history": [
+      "home",
+      "beauty"
+    ],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_11",
+    "items": [
+      {
+        "id": "item_no_11",
+        "price": 1951.0,
+        "category": "beauty"
+      }
+    ],
+    "order_value": 1951.0,
+    "customer_id": "cust_gen_111",
+    "has_active_discount": false,
+    "purchase_history": [
+      "sports"
+    ],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_12",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_12",
+        "price": 4484.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 5684.0,
+    "customer_id": "cust_gen_112",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 3,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_13",
+    "items": [
+      {
+        "id": "item_high_13",
+        "price": 5299.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 5299.0,
+    "customer_id": "cust_gen_113",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_14",
+    "items": [
+      {
+        "id": "item_aff_14",
+        "price": 2074.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 2074.0,
+    "customer_id": "cust_gen_114",
+    "has_active_discount": false,
+    "purchase_history": [
+      "electronics",
+      "apparel"
+    ],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_15",
+    "items": [
+      {
+        "id": "item_no_15",
+        "price": 815.0,
+        "category": "apparel"
+      }
+    ],
+    "order_value": 815.0,
+    "customer_id": "cust_gen_115",
+    "has_active_discount": false,
+    "purchase_history": [
+      "groceries"
+    ],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 122.25
+    }
+  },
+  {
+    "id": "cart_gen_16",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 768.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_16",
+        "price": 100.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 868.0,
+    "customer_id": "cust_gen_116",
+    "has_active_discount": true,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_17",
+    "items": [
+      {
+        "id": "item_high_17",
+        "price": 6697.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 6697.0,
+    "customer_id": "cust_gen_117",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_18",
+    "items": [
+      {
+        "id": "item_aff_18",
+        "price": 6026.0,
+        "category": "beauty"
+      }
+    ],
+    "order_value": 6026.0,
+    "customer_id": "cust_gen_118",
+    "has_active_discount": false,
+    "purchase_history": [
+      "beauty",
+      "sports"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 903.9
+    }
+  },
+  {
+    "id": "cart_gen_19",
+    "items": [
+      {
+        "id": "item_no_19",
+        "price": 937.0,
+        "category": "sports"
+      }
+    ],
+    "order_value": 937.0,
+    "customer_id": "cust_gen_119",
+    "has_active_discount": false,
+    "purchase_history": [
+      "books"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_20",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_20",
+        "price": 1120.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 2320.0,
+    "customer_id": "cust_gen_120",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_21",
+    "items": [
+      {
+        "id": "item_high_21",
+        "price": 6197.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 6197.0,
+    "customer_id": "cust_gen_121",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_22",
+    "items": [
+      {
+        "id": "item_aff_22",
+        "price": 1006.0,
+        "category": "apparel"
+      }
+    ],
+    "order_value": 1006.0,
+    "customer_id": "cust_gen_122",
+    "has_active_discount": true,
+    "purchase_history": [
+      "apparel",
+      "groceries"
+    ],
+    "declined_upsells_count": 3,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_23",
+    "items": [
+      {
+        "id": "item_no_23",
+        "price": 2443.0,
+        "category": "groceries"
+      }
+    ],
+    "order_value": 2443.0,
+    "customer_id": "cust_gen_123",
+    "has_active_discount": false,
+    "purchase_history": [
+      "home"
+    ],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_24",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_24",
+        "price": 5168.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 6368.0,
+    "customer_id": "cust_gen_124",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 955.2
+    }
+  },
+  {
+    "id": "cart_gen_25",
+    "items": [
+      {
+        "id": "item_high_25",
+        "price": 5575.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 5575.0,
+    "customer_id": "cust_gen_125",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_26",
+    "items": [
+      {
+        "id": "item_aff_26",
+        "price": 2566.0,
+        "category": "sports"
+      }
+    ],
+    "order_value": 2566.0,
+    "customer_id": "cust_gen_126",
+    "has_active_discount": false,
+    "purchase_history": [
+      "sports",
+      "books"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 384.9
+    }
+  },
+  {
+    "id": "cart_gen_27",
+    "items": [
+      {
+        "id": "item_no_27",
+        "price": 827.0,
+        "category": "books"
+      }
+    ],
+    "order_value": 827.0,
+    "customer_id": "cust_gen_127",
+    "has_active_discount": false,
+    "purchase_history": [
+      "electronics"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_28",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1044.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_28",
+        "price": 100.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 1144.0,
+    "customer_id": "cust_gen_128",
+    "has_active_discount": true,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_29",
+    "items": [
+      {
+        "id": "item_high_29",
+        "price": 7189.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 7189.0,
+    "customer_id": "cust_gen_129",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_30",
+    "items": [
+      {
+        "id": "item_aff_30",
+        "price": 6710.0,
+        "category": "groceries"
+      }
+    ],
+    "order_value": 6710.0,
+    "customer_id": "cust_gen_130",
+    "has_active_discount": false,
+    "purchase_history": [
+      "groceries",
+      "home"
+    ],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_31",
+    "items": [
+      {
+        "id": "item_no_31",
+        "price": 1213.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 1213.0,
+    "customer_id": "cust_gen_131",
+    "has_active_discount": false,
+    "purchase_history": [
+      "beauty"
+    ],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_32",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_32",
+        "price": 1612.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 2812.0,
+    "customer_id": "cust_gen_132",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 3,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_33",
+    "items": [
+      {
+        "id": "item_high_33",
+        "price": 6881.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 6881.0,
+    "customer_id": "cust_gen_133",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 1032.15
+    }
+  },
+  {
+    "id": "cart_gen_34",
+    "items": [
+      {
+        "id": "item_aff_34",
+        "price": 1282.0,
+        "category": "books"
+      }
+    ],
+    "order_value": 1282.0,
+    "customer_id": "cust_gen_134",
+    "has_active_discount": true,
+    "purchase_history": [
+      "books",
+      "electronics"
+    ],
+    "declined_upsells_count": 1,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_35",
+    "items": [
+      {
+        "id": "item_no_35",
+        "price": 2935.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 2935.0,
+    "customer_id": "cust_gen_135",
+    "has_active_discount": false,
+    "purchase_history": [
+      "apparel"
+    ],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_36",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_36",
+        "price": 5852.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 7052.0,
+    "customer_id": "cust_gen_136",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 1057.8
+    }
+  },
+  {
+    "id": "cart_gen_37",
+    "items": [
+      {
+        "id": "item_high_37",
+        "price": 5851.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 5851.0,
+    "customer_id": "cust_gen_137",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_38",
+    "items": [
+      {
+        "id": "item_aff_38",
+        "price": 3058.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 3058.0,
+    "customer_id": "cust_gen_138",
+    "has_active_discount": false,
+    "purchase_history": [
+      "home",
+      "beauty"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 458.7
+    }
+  },
+  {
+    "id": "cart_gen_39",
+    "items": [
+      {
+        "id": "item_no_39",
+        "price": 839.0,
+        "category": "beauty"
+      }
+    ],
+    "order_value": 839.0,
+    "customer_id": "cust_gen_139",
+    "has_active_discount": false,
+    "purchase_history": [
+      "sports"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_40",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_40",
+        "price": 220.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 1420.0,
+    "customer_id": "cust_gen_140",
+    "has_active_discount": true,
+    "purchase_history": [],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_41",
+    "items": [
+      {
+        "id": "item_high_41",
+        "price": 7681.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 7681.0,
+    "customer_id": "cust_gen_141",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_42",
+    "items": [
+      {
+        "id": "item_aff_42",
+        "price": 7394.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 7394.0,
+    "customer_id": "cust_gen_142",
+    "has_active_discount": false,
+    "purchase_history": [
+      "electronics",
+      "apparel"
+    ],
+    "declined_upsells_count": 3,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_43",
+    "items": [
+      {
+        "id": "item_no_43",
+        "price": 1489.0,
+        "category": "apparel"
+      }
+    ],
+    "order_value": 1489.0,
+    "customer_id": "cust_gen_143",
+    "has_active_discount": false,
+    "purchase_history": [
+      "groceries"
+    ],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_44",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_44",
+        "price": 2104.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 3304.0,
+    "customer_id": "cust_gen_144",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_45",
+    "items": [
+      {
+        "id": "item_high_45",
+        "price": 7565.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 7565.0,
+    "customer_id": "cust_gen_145",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 1,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 1134.75
+    }
+  },
+  {
+    "id": "cart_gen_46",
+    "items": [
+      {
+        "id": "item_aff_46",
+        "price": 558.0,
+        "category": "beauty"
+      }
+    ],
+    "order_value": 558.0,
+    "customer_id": "cust_gen_146",
+    "has_active_discount": true,
+    "purchase_history": [
+      "beauty",
+      "sports"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": null
+  },
+  {
+    "id": "cart_gen_47",
+    "items": [
+      {
+        "id": "item_no_47",
+        "price": 3427.0,
+        "category": "sports"
+      }
+    ],
+    "order_value": 3427.0,
+    "customer_id": "cust_gen_147",
+    "has_active_discount": false,
+    "purchase_history": [
+      "books"
+    ],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_48",
+    "items": [
+      {
+        "id": "item_A",
+        "price": 1200.0,
+        "category": "electronics"
+      },
+      {
+        "id": "item_other_48",
+        "price": 6536.0,
+        "category": "home"
+      }
+    ],
+    "order_value": 7736.0,
+    "customer_id": "cust_gen_148",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": true,
+      "order_value_delta": 1160.4
+    }
+  },
+  {
+    "id": "cart_gen_49",
+    "items": [
+      {
+        "id": "item_high_49",
+        "price": 5127.0,
+        "category": "electronics"
+      }
+    ],
+    "order_value": 5127.0,
+    "customer_id": "cust_gen_149",
+    "has_active_discount": false,
+    "purchase_history": [],
+    "declined_upsells_count": 0,
+    "simulate_outcome": {
+      "accepted": false,
+      "order_value_delta": 0.0
+    }
+  },
+  {
+    "id": "cart_gen_50",
+    "items": [
+      {
+        "id": "item_aff_50",
+        "price": 3550.0,
+        "category": "apparel"
+      }
+    ],
+    "order_value": 3550.0,
+    "customer_id": "cust_gen_150",
+    "has_active_discount": true,
+    "purchase_history": [
+      "apparel",
+      "groceries"
+    ],
+    "declined_upsells_count": 2,
+    "simulate_outcome": null
+  }
+]

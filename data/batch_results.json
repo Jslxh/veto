@@ -1,0 +1,23 @@
+{
+  "total_carts": 50,
+  "total_propose": 22,
+  "total_decline": 28,
+  "decline_rate_pct": 56.0,
+  "total_baseline_value": 173244.0,
+  "total_gained_upsell_value": 8413.3,
+  "uplift_percentage": 4.86,
+  "decline_reasons_breakdown": {
+    "No rules triggered": 12,
+    "Discount conflict": 8,
+    "Below confidence threshold": 8
+  },
+  "confidence_score_distribution": {
+    "0.00": 12,
+    "0.40": 4,
+    "0.45": 4,
+    "0.50": 4,
+    "0.70": 5,
+    "0.75": 11,
+    "0.80": 10
+  }
+}

@@ -63,3 +63,50 @@ Aggregated outcomes from the scenario runs:
 Here is a full browser-recorded demo of the Swagger UI interactive documentation, testing checkout decisions, and inspecting SQLite audit logs:
 
 ![VETO Swagger UI and SQLite Audit Demo](assets/swagger_demo.webp)
+
+---
+
+## Rich Synthetic Dataset (50 Carts)
+
+We provide a dataset of 50 realistic synthetic carts generated via `data/seed_carts.py` and saved to `data/carts.json`. This covers:
+- Varied categories (electronics, apparel, groceries, etc.).
+- Order values ranging from ₹500 to ₹8000.
+- A mixture of carts: some trigger no rules, some have repeat-customer history, some missing a bundle item, and some already at high value.
+- A realistic spread of discount states (~30% active discount) and decline histories (0, 1, or 2+ prior declines).
+- The original 5 scenarios are preserved as a labeled subset within this 50 (indices 1-5).
+
+### Running the Batch Analytics
+To process all 50 carts through the evaluation pipeline and output aggregate stats, run:
+```bash
+PYTHONPATH=. .venv/bin/python data/run_batch.py
+```
+This writes the summary statistics (decline reasons, confidence distribution, uplift %) to `data/batch_results.json`. It clears the audit database at the start and end of the script to prepare a clean trail for your interactive demos.
+
+---
+
+## Frontend Demo Dashboard
+
+A single-page React app (React + Vite + Tailwind CSS + Framer Motion) is provided in `frontend/` to run cart evaluations interactively.
+
+### Preview of the Dashboard
+
+![VETO Selected Cart View](assets/verification/selected_cart.png)
+
+![VETO Pipeline Animation](assets/verification/pipeline_animation.png)
+
+### Running Backend and Frontend Together
+
+1. **Start the FastAPI Backend**:
+   ```bash
+   .venv/bin/uvicorn app.main:app --port 8000
+   ```
+
+2. **Start the React Frontend**:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+
+3. Open `http://localhost:5173` in your browser. You can select any of the 50 synthetic carts, run the decision pipeline live, view animated progress bars & outcomes, and expand the SQLite audit logs timeline directly.
+

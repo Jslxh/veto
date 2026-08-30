@@ -65,6 +65,23 @@ MOCK_CARTS: Dict[str, Dict[str, Any]] = {
     }
 }
 
+# Try loading data/carts.json at import time to populate/merge MOCK_CARTS
+try:
+    import json
+    _carts_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "carts.json")
+    if os.path.exists(_carts_file):
+        with open(_carts_file, "r") as _f:
+            _loaded_carts = json.load(_f)
+            for _c in _loaded_carts:
+                # We omit the simulate_outcome field from the returned cart data in MOCK_CARTS
+                # to keep it strictly aligned with standard cart schemas.
+                _cart_data = _c.copy()
+                if "simulate_outcome" in _cart_data:
+                    del _cart_data["simulate_outcome"]
+                MOCK_CARTS[_c["id"]] = _cart_data
+except Exception:
+    pass
+
 def fetch_cart(cart_id: str) -> Dict[str, Any]:
     """
     Fetches checkout/order from Razorpay test mode if keys are provided.

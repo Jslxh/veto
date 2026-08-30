@@ -142,6 +142,16 @@ app_graph = workflow.compile()
 # FastAPI application
 app = FastAPI(title="VETO Bounded Upsell-Decision Agent")
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=False,
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
+)
+
 @app.get("/", include_in_schema=False)
 def root_redirect():
     return RedirectResponse(url="/docs")
@@ -176,3 +186,32 @@ def evaluate_cart(request: EvaluateCartRequest):
 @app.get("/audit-records")
 def get_audit_records():
     return get_all_records()
+
+@app.get("/carts")
+def get_carts():
+    import os
+    import json
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "carts.json")
+    if os.path.exists(path):
+        try:
+            with open(path, "r") as f:
+                return json.load(f)
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error reading carts: {e}")
+    # Fallback to returning MOCK_CARTS
+    from app.razorpay_client import MOCK_CARTS
+    return list(MOCK_CARTS.values())
+
+@app.get("/batch-results")
+def get_batch_results():
+    import os
+    import json
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "batch_results.json")
+    if os.path.exists(path):
+        try:
+            with open(path, "r") as f:
+                return json.load(f)
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error reading batch results: {e}")
+    return {"error": "Batch results not found"}
+
