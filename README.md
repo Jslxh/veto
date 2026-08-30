@@ -92,8 +92,6 @@ A single-page React app (React + Vite + Tailwind CSS + Framer Motion) is provide
 
 ![VETO Selected Cart View](assets/verification/selected_cart.png)
 
-![VETO Pipeline Animation](assets/verification/pipeline_animation.png)
-
 ### Running Backend and Frontend Together
 
 1. **Start the FastAPI Backend**:
