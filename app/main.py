@@ -2,6 +2,7 @@ import uuid
 import time
 from typing import TypedDict, Optional, Dict, Any
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
 from langgraph.graph import StateGraph, END
 
@@ -140,6 +141,10 @@ app_graph = workflow.compile()
 
 # FastAPI application
 app = FastAPI(title="VETO Bounded Upsell-Decision Agent")
+
+@app.get("/", include_in_schema=False)
+def root_redirect():
+    return RedirectResponse(url="/docs")
 
 class EvaluateCartRequest(BaseModel):
     cart_id: str
